@@ -118,10 +118,7 @@ function App() {
               setPage('list')
               setHeading('CUSTOMER LIST')
             }}>List</button></div>
-            <div className="navi">
-            <button onClick={()=>{
-              
-            }}>Some</button>
+            
             </div>
           </div>
     </div>
