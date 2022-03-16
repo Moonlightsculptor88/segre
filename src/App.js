@@ -40,7 +40,7 @@ function App() {
     // getNumber();
 
     const fetchData = () => {
-      axios.get("http://localhost:3001/read").then((response) => {
+      axios.get("https://segre.herokuapp.com/read").then((response) => {
         
         if (response.data.success) {
           SetIsLoading(false);
@@ -51,7 +51,7 @@ function App() {
       
       };
       
-      axios.get("http://localhost:3001/numbers").then(response=>{
+      axios.get("https://segre.herokuapp.com/numbers").then(response=>{
           setArr(response.data)
           
       })
@@ -66,8 +66,8 @@ function App() {
   function onSubmit(e){
     e.preventDefault();
     if(selectedIdx !== -1){
-    axios.post('http://localhost:3001/insert', {userName: name, token:selectedIdx})
-    axios.delete(`http://localhost:3001/deleteNum/${numId}`)
+    axios.post('https://segre.herokuapp.com/insert', {userName: name, token:selectedIdx})
+    axios.delete(`https://segre.herokuapp.com/deleteNum/${numId}`)
     console.log(numId);
     setRender(true);
     setName("")
@@ -75,8 +75,8 @@ function App() {
   }}
 
   const deleteUser = (id, token)=>{
-    axios.delete(`http://localhost:3001/delete/${id}`)
-    axios.post('http://localhost:3001/insertNum', {token : token})
+    axios.delete(`https://segre.herokuapp.com/delete/${id}`)
+    axios.post('https://segre.herokuapp.com/insertNum', {token : token})
     setRender(true);
   }
  
