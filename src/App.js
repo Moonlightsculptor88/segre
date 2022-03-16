@@ -119,7 +119,7 @@ function App() {
               setHeading('CUSTOMER LIST')
             }}>List</button></div>
             
-            </div>
+            
           </div>
     </div>
   );
