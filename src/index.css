@@ -40,6 +40,7 @@ input{
   text-align: center;
   color: black;
   padding: 2px;
+  height: 30px;
 }
 
 button{
@@ -109,8 +110,6 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  position: fixed;
-  bottom: 0;
   border-top: 5px solid var(--border-color);
 
 }
@@ -124,8 +123,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .navi >button{
-  height: 80%;
-  width: 80%;
+  height: 70%;
+  width: 70%;
   background-color: white;
   color: #000000;
   border: 2px dashed;
@@ -143,7 +142,7 @@ form{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 0.5rem;
-  max-height: 220px;
+  max-height: 240px;
   overflow: auto;
 }
 
