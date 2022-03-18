@@ -9,7 +9,7 @@ import axios from 'axios';
 
 
 function App() {
-  const [heading, setHeading] = useState('ADD CUSTOMER')
+  const [heading, setHeading] = useState('CUSTOMER LIST')
   const [name, setName] = useState("");
   const [selectedIdx , setSelectedIdx] = useState(-1);
   const [arr, setArr] = useState([]);
