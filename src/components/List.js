@@ -27,7 +27,17 @@ function List(props) {
     });
   }
   
-  const [del, setDel] = useState(false)
+  function compare(a,b){
+    if(a.userName < b.userName){
+        return -1;
+    }
+    if(a.userName > b.userName){
+        return 1;
+    }
+    return 0
+}
+
+  props.users.sort(compare);
   return (
     <div>
     
